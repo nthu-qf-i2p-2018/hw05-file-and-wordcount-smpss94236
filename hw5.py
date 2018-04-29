@@ -49,8 +49,10 @@ def main(filename):
 
 
     import pickle
-
-    pickle.dump(word_counter.most_common(),open('wordcount.pkl', 'wb'))
+    f = open('wordcount.pkl', 'wb')
+    #pickle.dump(word_counter.most_common(),open('wordcount.pkl', 'wb'))
+    pickle.dump(word_counter.most_common(),f)
+    f.close()
 
 
     # dump to a csv file named "wordcount.csv":
