@@ -1,9 +1,5 @@
 import string
 
-
-def main(filename):import string
-
-
 def main(filename):
     # read file into lines
     #lines = open('i_have_a_dream.txt').readlines()
